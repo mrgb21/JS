@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Home</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="" alt="">
+            <nav>
+                <ul class="lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cursos.html">Courses</a></li>
+                    <li><a href="#">Books</a></li>
+                </ul>
+            </nav>
+            <a class="" href="carrito.html"><button class="boton"><ion-icon name="basket"></ion-icon>Cart <span class="span1">0</span></button></a>
+        </header>
+        <p id="mensajito"></p>
+        <div class="columnas">
+            <div class="columna1"><h1>The future is waiting<br></h1>
+                <p>Invest in yourself and get ready for it </p><br>
+            <div id="inputs">
+                <ul id="listas">
+                     <form id="form" onsubmit="return false;">
+                        
+                        <p>First name</p><li><input id = "caja1" type="text"></li>
+                        <p>Last name</p><li><input id = "caja2" type="text"></li>
+                        <p>Email</p><li><input id = "caja3" type="email"></li>
+                        <input type="submit" value="Contact me" class="boton2" onclick="">
+                        
+                    </form>
+                    
+                </ul>
+             </div>
+            <!-- <button class="boton2">Learn more</button> -->
+            
+        </div>
+            <div class="columna2"><img src="finanzas.png" alt="" class="imagen1"></div>
+        
+        </div>
+    </div>
+   
+    <div class="contenedorMayor"> 
+        <div class="cursoscontenedor">
+          <!--------------------- Primer Modal -------------------------->
+            <div>
+                <h3>Learn Fundamental Analysis</h3>
+                <img src="imagen1.jpg" alt="" class="cursoGrid" id="curso1">
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quam soluta provident, corrupti magnam dicta at unde necessitatibus ex impedit ipsa. Aperiam ipisci animi facilis!</p>
+            <button id="myBtn">Learn More</button>
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">Keep looking</span>
+                    <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore aliquid harum necessitatibus accusantium, quos culpa soluta sunt temporibus consequuntur perferendis maxime. Qui, magni dolor! Fugit optio est unde recusandae!</p>
+                    <button class="agregar-carrito cart1" id="agregarCarrito1">Add to cart</button>
+                  </div>
+                </div>
+              
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+                  </script>
+            </div>
+            <!--------------------- Segundo Modal -------------------------->
+            <div>
+                <h3>Learn Technical Analysis</h3>
+                <img src="imagen3.jpg" alt="" class="cursoGrid">
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quam soluta provident, corrupti magnam dicta at unde necessitatibus ex impedit ipsa. Aperiam ipisci animi facilis!</p>
+                <button id="myBtn2">Learn More</button>
+                <div id="myModal2" class="modal2">
+                  <div class="modal-content2">
+                    <span class="close2">Keep Looking</span>
+                    <p id="info2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore aliquid harum necessitatibus accusantium, quos culpa soluta sunt temporibus consequuntur perferendis maxime. Qui, magni dolor! Fugit optio est unde recusandae!</p>
+                    <button class="agregar-carrito cart2" id="agregarCarrito2">Add to cart</button>
+                  </div>
+                  
+                </div>
+                <script>
+                  var modal2 = document.getElementById("myModal2");
+                  var btn2 = document.getElementById("myBtn2");
+                  var span2 = document.getElementsByClassName("close2")[0];
+                  
+                  btn2.onclick = function() {
+                    modal2.style.display = "block";
+                  }
+                  span2.onclick = function() {
+                    modal2.style.display = "none";
+                  }
+              
+                  window.onclick = function(event) {
+                    if (event.target == modal2) {
+                      modal2.style.display = "none";
+                    }
+                  }
+                </script>
+                
+            </div>
+            
+            <!--------------------- Tercer Modal -------------------------->
+            <div>
+                <h3>Introduction to Financial Markets</h3>
+                <img src="imagen2.jpg" alt="" class="cursoGrid">
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quam soluta provident, corrupti magnam dicta at unde necessitatibus ex impedit ipsa. Aperiam ipisci animi facilis!</p>
+                <button id="myBtn3">Learn More</button>
+                <div id="myModal3" class="modal3">
+                  <div class="modal-content3">
+                    <span class="close3">Keep Looking</span>
+                    <p id="info3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore aliquid harum necessitatibus accusantium, quos culpa soluta sunt temporibus consequuntur perferendis maxime. Qui, magni dolor! Fugit optio est unde recusandae!</p>
+                    <button class="agregar-carrito cart3" id="agregarCarrito3">Add to cart</button>
+                  </div>
+                </div>
+                <script>
+                  var modal3 = document.getElementById("myModal3");
+                  var btn3 = document.getElementById("myBtn3");
+                  var span3 = document.getElementsByClassName("close3")[0];
+                  
+                  btn3.onclick = function() {
+                    modal3.style.display = "block";
+                  }
+                  span3.onclick = function() {
+                    modal3.style.display = "none";
+                  }
+              
+                  window.onclick = function(event) {
+                    if (event.target == modal3) {
+                      modal3.style.display = "none";
+                    }
+                  }
+                </script>
+            </div>  
+    </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="proyecto.js"></script>  
+  
+</body>
+</html> 
